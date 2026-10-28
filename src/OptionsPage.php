@@ -944,7 +944,7 @@ class OptionsPage
      */
     private function renderTabs(): void
     {
-        if (empty($this->tabs)) {
+        if (count($this->tabs) <= 1) {
             return;
         }
 
